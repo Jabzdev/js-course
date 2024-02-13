@@ -56,12 +56,79 @@ console.log(a <= 0);
 console.log(a === 1);
 console.log(a !== 1);
 
-//                              Strict Equality
+//            Strict Equality
 
 console.log(1 === 1);     //output True
 console.log('1' === 1);   //output False
 
-//                               Lose Equality
+//            Lose Equality
 
 console.log(1 == 1);     //output True
 console.log('1' == 1);   //output True
+
+
+//                                                    Ternary Operators
+
+
+// If acustomer has more than 100 points,
+// they are a 'gold' customer, otherwise,
+// they are a 'silver' customer.
+
+let points = 110;
+let type = points > 100 ? 'gold' : 'silver';
+console.log(type);
+
+//                                                    Logical Operators
+
+// Logical AND (&&)
+// Returns TRUE if both operands are TRUE
+console.log(true && true);
+
+// Logical OR (||)
+// Returns TRUE if one  of the operands is TRUE
+let highIncome = false;
+let goodCreditScore = true;
+let eligibleForloan = highIncome || goodCreditScore;
+console.log(eligibleForloan);
+
+// NOT (!)
+let applicationRefused = !eligibleForloan;
+console.log(`Application refused: ${applicationRefused}`);
+
+
+
+
+// Flasy values (false):
+
+// undefined
+// null
+// 0
+// false
+// ''
+// NaN
+
+//  Anything that is not Falsy  -> Truthy
+
+
+
+
+
+//                                              Operators Precedence
+
+let j = (2 +3) * 4;
+console.log(j);
+
+
+
+// Swapping Variables
+
+let m = "red";
+let n = "blue";
+
+
+let o = m;
+m = n;
+n = o;
+
+console.log(m);
+console.log(n);
