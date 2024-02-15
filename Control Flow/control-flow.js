@@ -80,3 +80,32 @@ while (i <= 5) {
 //                                            Infinite Loop
 
 // for (let i = 0; i > 0; i++)
+
+
+//   For...in
+
+const person = {
+  name: 'Jabuu',
+  age: 23
+};
+
+for (let key in person) {
+  console.log(key, person[key]);
+}
+
+
+
+const colors = ['red', 'black', 'yellow', 'brown'];
+
+for (let index in colors) {
+  console.log(index, colors[index]);
+}
+
+
+
+
+//   For...of
+
+for (let coloor of colors) {
+  console.log(coloor);
+}
