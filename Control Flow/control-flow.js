@@ -58,6 +58,25 @@ switch (role) {
 
 //                                             For Loop
 
+for (let i = 0; i < 5; i++) {
+  console.log('Hello World!', i);
+}
+
+for (let q = 5; q >= 0; q--) {
+  console.log('Hey!', q);
+}
 
 
 
+//                                             While Loop 
+
+let i = 0
+while (i <= 5) {
+  console.log('Wassup!', i);
+  i++;
+}
+
+
+//                                            Infinite Loop
+
+// for (let i = 0; i > 0; i++)
