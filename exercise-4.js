@@ -7,13 +7,13 @@
 // Math.floor(1.3)
 // 12 points -> suspended
 
-checkSpeed(50);
+checkSpeed(75);
 
 function checkSpeed(speed) {
   const speedLimit = 70;
   const kmPerPoint = 5;
 
-  if (speed <= speedLimit) {
+  if (speed < speedLimit + kmPerPoint) {
     console.log('Ok');
   }
   else {
