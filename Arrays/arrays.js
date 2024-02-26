@@ -66,3 +66,21 @@ const course1 = courses.findIndex(function(course) {
   return course.name === 'b';
 });
 //console.log(course1);
+
+
+
+//                       Emptying an Array
+
+let numbers4 = [1, 2, 3, 4, 5];
+
+numbers4.length = 0;
+//console.log(numbers4);
+
+
+//                             Combining Arrays
+
+const first = [1, 2, 3, 4];
+const second = [5, 6, 7, 8];
+
+const combined = first.concat(second);
+console.log(combined);
