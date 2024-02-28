@@ -1,4 +1,4 @@
-//                                       Adding Elements
+//                                                    Adding Elements
 
 const numbers = [3, 4];
 //console.log(numbers);
@@ -18,7 +18,7 @@ numbers.splice(4, 0, 5);
 
 
 
-//                                         Removing Elements
+//                                                 Removing Elements
 
 const numbers2 = [1, 2, 3, 4, 5, 6, 7];
 
@@ -37,7 +37,7 @@ numbers2.splice(3, 1);
 
 
 
-//                                     Finding Elements (Primitives)
+//                                           Finding Elements (Primitives)
 
 
 const numbers1 = [1, 2, 3, 1, 4];
@@ -49,7 +49,7 @@ const numbers1 = [1, 2, 3, 1, 4];
 
 
 
-//                                    Finding Elements (Reference Types)
+//                                         Finding Elements (Reference Types)
 
 
 const courses = [
@@ -69,7 +69,7 @@ const course1 = courses.findIndex(function(course) {
 
 
 
-//                       Emptying an Array
+//                                                 Emptying an Array
 
 let numbers4 = [1, 2, 3, 4, 5];
 
@@ -77,10 +77,28 @@ numbers4.length = 0;
 //console.log(numbers4);
 
 
-//                             Combining Arrays
+//                                                   Combining Arrays
 
-const first = [1, 2, 3, 4];
+const frist = [1, 2, 3, 4];
 const second = [5, 6, 7, 8];
 
-const combined = first.concat(second);
-console.log(combined);
+const combined = frist.concat(second);
+//console.log(combined);
+
+//                                                   Sorting   Arrays
+
+const courses1 = [
+  { id: 1, name: 'Node.js' },
+  { id: 2, name: 'JavaScript' },
+];
+
+courses1.sort(function(a, b) {
+  // a < b => -1
+  // a > b => 1
+  // a === b => 0
+
+  if (a.name < b.name) return -1;
+  if (a.name > b.name) return 1;
+  return 0;
+});
+console.log(courses1);
