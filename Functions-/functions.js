@@ -66,8 +66,36 @@ const person = {
   }
 };
 person.fullName = 'Jabu Himo';
-console.log(person);
+//console.log(person);
 
 
-//                                         Try And Catch
+//                                       Local and Global Scope
 
+//Local Scope
+
+// Local scope refers to the context within which variables and functions are only accessible
+// They are visible within a specific block of code, 
+// typically within a function or a code block like a loop or an if statement.
+
+//EXAMPLE
+{
+  const message = 'hi'  // Local variable
+  console.log(message);
+}
+
+
+
+//Global Scope
+
+// Global scope refers to the context within which variables and functions
+// They are accessible or visible throughout the entire program.
+
+//EXAMPLE
+
+const message = 'yoo'   //   Global variable
+
+{
+  console.log(message);
+}
+
+console.log(message);
